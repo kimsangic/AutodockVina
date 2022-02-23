@@ -191,7 +191,7 @@ foreach my $ligand ( @ldir_pdbqts) {
 	open $fh, "$outdir/logs/$ligand.log" ;
 	chomp(@temp_storage=<$fh>);
 	close $fh;
-	my $best_energy=$temp_storage[25] ;
+	my $best_energy=$temp_storage[26] ;
 	my $drugbank_id = $mapped_ids{"$ligand.pdbqt"} ;
 	my $drugbank_rest = $mapped_ids_rest{"$ligand.pdbqt"} ;
 	@header_energies = @temp_storage[22,23,24] ;
